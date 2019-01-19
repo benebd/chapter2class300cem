@@ -15,22 +15,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button runPETbtn = findViewById(R.id.runpetbtn);
         Button runDISbtn = findViewById(R.id.rundiebtn);
-        EditText makeET =findViewById(R.id.makeedt);
-        EditText yearET=findViewById(R.id.yearedt);
-        EditText colorET=findViewById(R.id.coloredt);
+//        EditText makeET =findViewById(R.id.makeedt);
+//        EditText yearET=findViewById(R.id.yearedt);
+//        EditText colorET=findViewById(R.id.coloredt);
 
-        final String stMake = makeET.getText().toString();
-        final String stYear = yearET.getText().toString();
-        final String stColor = colorET.getText().toString();
-        final Car car = new Car(stMake,stYear,stColor);
+
+
 
         runPETbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                EditText makeET =findViewById(R.id.makeedt);
+                EditText yearET=findViewById(R.id.yearedt);
+                EditText colorET=findViewById(R.id.coloredt);
                 final String stMake = makeET.getText().toString();
                 final String stYear = yearET.getText().toString();
                 final String stColor = colorET.getText().toString();
-                final Car car = new Car(stMake,stYear,stColor);
+                Car car = new Car(stMake,stYear,stColor);
 
                 showToast(car.getMake(),car.getYear(),car.getYear());
             }

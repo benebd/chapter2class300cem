@@ -5,7 +5,9 @@ public class Car {
     private String year;
     private String color;
 
+    public  Car(){
 
+    }
     public Car(String make, String year, String color) {
         this.make = make;
         this.year = year;
