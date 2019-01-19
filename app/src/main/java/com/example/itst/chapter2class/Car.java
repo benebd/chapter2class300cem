@@ -4,13 +4,13 @@ public class Car {
     private String make;
     private String year;
     private String color;
-    private String fuel;
 
-    public Car(String make, String year, String color, String fuel) {
+
+    public Car(String make, String year, String color) {
         this.make = make;
         this.year = year;
         this.color = color;
-        this.fuel = fuel;
+
     }
 
     public String getMake() {
@@ -37,11 +37,4 @@ public class Car {
         this.color = color;
     }
 
-    public String getFuel() {
-        return fuel;
-    }
-
-    public void setFuel(String fuel) {
-        this.fuel = fuel;
-    }
 }
